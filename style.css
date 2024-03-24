@@ -1,0 +1,359 @@
+*{
+    margin :0px ;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  
+    
+    
+}
+::-webkit-scrollbar{
+    display: none;
+}
+header{
+    width : 80%;
+    height : 6vw;
+    margin: 0 auto;
+    background-color: transparent ;
+    border-bottom: 0.1vw solid rgba(0, 0, 0, 0.11);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top : -2vw ;
+}
+
+.content{
+    width : 100vw;
+    aspect-ratio: 16/9;
+    background : transparent;
+    display :flex ;
+}
+.rightbx{
+    width: 35vw;
+    height : 57vw;
+    background: rgb(0, 0, 0);
+    border-top-left-radius :3vw ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.leftbx{
+    width: 65vw;
+    height : 57vw;
+    background: transparent;
+    
+}
+.upbx{
+    width :65vw ;
+    height : 36vw ;
+    background-color: rgb(255, 255, 255);
+    border-bottom-right-radius: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.lwbx{
+    width  :65vw ;
+    height :21vw ;
+    background-color: rgb(0, 0, 0);
+    border-top-left-radius: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.sprtbx{
+    width : 5vw;
+    aspect-ratio: 1/1;
+    background-color: rgb(0, 0, 0);
+    position : absolute;
+    top : 32vw;
+    left : 62vw ;
+    z-index: -1;
+    
+    
+}
+.logo{
+    width : 12vw ;
+    aspect-ratio: 4/1;
+    background-color: transparent;
+    cursor: pointer;
+}
+.lnks{
+    width: 20vw;
+    aspect-ratio: 6/0.8;
+    background-color: transparent;
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    top :0.4vw ;
+    
+    
+    
+}
+.yellowlogo{
+    width : 11.4vw;
+    height : 1.3vw ;
+    border-radius: 0.6vw;
+    background: #FAFF00 ;
+}
+.logotxt{
+    position : relative ;
+    top : 1.8vw;
+    left : 0.4vw;
+    font-size: 2.7vw;
+    font-weight: bold;
+    
+}
+.inlink{
+    width : 80% ;
+    display : flex;
+    flex-direction: row;
+    font-size: 1.1vw;
+    position: relative;
+    text-decoration: none;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+   }
+li{
+    height: 1.3vw ;  
+    border-bottom: 0.7vw solid transparent;
+    border-radius: 0.2vw;
+    font-weight: bold;
+   
+
+}
+li:hover{
+    border-bottom: 0.7vw solid #FAFF00;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+.maincontent{
+    font-size: 4vw;
+    font-weight: bold;
+    z-index: 1;
+}
+.yellowline2{
+    position: relative;
+    top: -8.94vw;
+    left: -2.0vw ;
+    width : 16.4vw;
+    aspect-ratio: 8.769;
+    border-radius: 0.6vw;
+    background: #FAFF00 ;
+    }
+.getstarted{
+    position: absolute;
+    font-size: 1vw;
+    width: 10vw;
+    aspect-ratio: 3.125;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4vw;
+    font-weight: bold;
+    top: 26vw;
+    left: 50vw;
+    box-shadow: 0 0.6vw 0.5vw 0.01vw #fbff00;
+    cursor: pointer;
+   
+    
+    }
+ .getstarted:hover{
+    box-shadow: 0 0.6vw 2vw 0.07vw #fbff00;
+   
+    transition: 300ms ease-in-out;
+ }   
+.rightbxheader{
+    width : 80%;
+    height : 4vw;
+    margin: 0 auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+}    
+.share{
+    width: 2vw;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border-radius: 3vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.share:hover , .regis-login:hover{
+    background-color: #FAFF00;
+    transition: 200ms ease-in-out;
+}
+.actionbt{
+    width : 18vw ;
+    height: 2.2vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.actionbt:hover{
+    transition: 200ms ease-in-out;
+}
+.share img{
+    width : 1vw;
+    aspect-ratio: 1/1;
+   
+}
+.regis-login{
+    width: 40%;
+    height: 90%;
+    border-radius: 0.6vw;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1vw ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.vidcontent{
+    width:28vw;
+    aspect-ratio: 28/41;
+    position: relative;
+    top: -6vw;
+    background-color: #ffffff;
+    border-radius: 2vw;
+    overflow: hidden;
+}
+.vidvid{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+.vidcontent video{
+    width: 100%;
+    aspect-ratio: 5/7;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    
+}
+.circlebox{
+    width: 60vw;
+    height: 12vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    overflow-x: scroll;
+}
+.footerarea{
+    width: 60vw;
+    height: 8vw;
+    background-color: transparent;
+}
+.circle1{
+    width: 9vw;
+    aspect-ratio: 1/1;
+    
+    
+    border-radius: 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    
+    
+   }
+.circle1:hover{
+    background-image: repeating-conic-gradient(from var(--a), yellow 0deg, yellow 60deg, rgb(255, 255, 255) 120deg , yellow 180deg);
+    animation: 3s roto ease-in-out infinite;
+    
+    
+   }
+.circle2{
+    
+    width: 90%;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border-radius: 6vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+   
+}
+
+
+@property --a{
+ syntax: '<angle>';
+ inherits: false;
+ initial-value: 0deg;
+}
+
+@keyframes roto{
+0% { 
+    --a:0deg;
+}
+100%{
+    --a : 360deg
+}
+}
+
+
+
+.ntbkgif{
+    
+    position: relative;
+    top : -2.36vw;
+    left: -0.1vw ;
+    opacity: 0;
+    width : 76%;
+    
+    }
+
+.ntbkgif:hover{
+    opacity: 100%;
+    
+}
+
+.ntbkpng{
+    position: relative;
+    top : 3.1vw;
+    left: -0.1vw ;
+    opacity: 100%;
+    width : 60%;
+    
+    
+   
+}
+.ntbkpng:hover{
+    opacity: 0%;
+    
+}
+.colorlight{
+    filter: hue-rotate(-115deg)  saturate(3) contrast(1.5);
+}
