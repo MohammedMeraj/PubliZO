@@ -432,3 +432,82 @@ a{
     font-weight: bold;
     color: #FAFF00;
 }
+.headerline{
+    width: 100vw;
+    height: 0.1vw;
+    background-color: rgba(0, 0, 0, 0.08);
+    position: absolute;
+    top: 3.904vw;
+}
+.dashboardbd{
+    width: 100vw;
+    height: 52vw;
+    background-color: transparent;
+    position: relative;
+    top: -2vw;
+    display: flex;
+}
+.dashboardmenu{
+    width: 20vw;
+    height: 100%;
+    background: transparent;
+    border-right: 0.3vw solid rgba(0,0,0,0.1);
+    position: relative;
+}
+.dashboardcontent{
+    width: 80vw;
+    height: 52vw;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logoutbt{
+   
+    background: rgb(255, 255, 255) ;
+    position: absolute;
+    top: 1vw;
+    left: 92vw;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.logoutbt:hover{
+    background-color: #FAFF00;
+    transition: 300ms ease-in-out;
+}
+.btbt{
+    width: fit-content;
+    padding-left: 0.6vw;
+    padding-right: 0.6vw;
+    height: 2vw;
+    box-shadow: 0 0 0.7vw 0.1vw rgba(0,0,0,0.1);
+    font-size: 0.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3vw;
+    font-weight: bold;
+
+}
+.dbmenuitem{
+    width: 100%;
+    height: 4vw;
+    background-color: transparent;
+    font-size: 1.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.2vw solid rgba(0,0,0,0.1);
+    cursor: pointer;
+
+}
+.dbmenuitem:hover{
+    background-color: #FAFF00;
+    transition: 300ms ease-in-out;
+}
+.dbContentWindow{
+    width: 80vw;
+    height: 52vw;
+    position: absolute;
+    background-color: transparent;
+}
