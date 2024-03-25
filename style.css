@@ -166,6 +166,7 @@ li:hover{
     left: 50vw;
     box-shadow: 0 0.6vw 0.5vw 0.01vw #fbff00;
     cursor: pointer;
+    text-decoration: none;
    
     
     }
@@ -356,4 +357,78 @@ li:hover{
 }
 .colorlight{
     filter: hue-rotate(-115deg)  saturate(3) contrast(1.5);
+}
+.inlink a{
+    text-decoration: none;
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.registersnip{
+    width: 58vw;
+    
+    aspect-ratio: 65/35;
+    background: black;
+    margin: 0 auto;
+    position: relative;
+    top: 1vw;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.inptflds{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
+.reghead{
+    color: white;
+    font-weight: bold;
+    font-size: 2.6vw;
+}
+.regbt{
+    width: 8vw;
+    aspect-ratio: 8/1.2;
+    background-color: white;
+    border-radius: 0.3vw;
+    color: black;
+    font-size: 1.2vw;
+    border: none;
+    padding: 0.4vw;
+    font-weight: bold;
+    position: relative;
+    top: -4vw;
+    left: 13vw;
+    cursor: pointer;
+    }
+.regbt:hover{
+    box-shadow: 0 0 2vw 4vw rgba;
+}
+.inpt{
+    width: 35vw;
+    height: 3vw;
+    font-size: 1.1vw;
+    padding-left: 1vw;
+    border-radius: 1vw;
+    border: none;
+    background-color: #2E2E2E;
+    color: white;
+}
+.accinfo{
+    color: white;
+    font-size: 1.2vw;
+    font-weight: lighter;
+    position: relative;
+    top: -2vw;
+    left: -8.4vw;
+}
+.accinfo a{
+    font-weight: bold;
+    color: #FAFF00;
 }
