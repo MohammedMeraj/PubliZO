@@ -511,3 +511,186 @@ a{
     position: absolute;
     background-color: transparent;
 }
+
+/*iframe Content window - Dashboard*/
+.dhashboardArea{
+    width: 94vw;
+    height: fit-content;
+    background-color: transparent;
+    margin: 0 auto;
+    
+}
+.uppdersnippets{
+    width: 94vw;
+    height: 18vw;
+    background: transparent;
+    margin-top: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.DBinfosnippet{
+    width: 46.6vw;
+    height: 18vw ;
+    
+    border: 0.1vw solid rgba(0,0,0,0.2);
+    border-radius: 2vw;
+}
+.sp1{
+    background: rgb(255, 254, 179);
+}
+.recentheader{
+    width: 94vw;
+    height: 4vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5vw;
+}
+.addNewPostBt{
+    width: fit-content;
+    padding: 0.6vw 0.8vw;
+    border-radius: 0.4vw;
+    background: #2E2E2E;
+    color: white;
+    font-size: 1.2vw;
+    box-shadow: 0 0 0.6vw 0.2vw rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.recentPostTitle{
+    font-size: 1.6vw ;
+    font-weight: bolder;
+    color: #2E2E2E;
+}
+.recentpostsnippet{
+    width: 94vw;
+    height: fit-content;
+    border-radius: 1.2vw;
+    background-color: #EDEDEC;
+    padding: 1vw 1vw;
+}
+.recentpostheading{
+    width: 100%;
+    height: 4vw;
+    background: white;
+    border-radius: 1vw 1vw 0vw 0vw ;
+    border-bottom: 0.2vw solid rgba(0,0,0,0.2);
+    margin-bottom: 2vw;
+    font-size: 1.3vw;
+    color: #424242;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.postNum{
+    width: fit-content;
+    padding: 1vw 1.5vw;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.postName{
+    min-width: 45vw;
+    width: fit-content;
+    padding: 1vw 1.5vw;
+    border-left: 0.2vw solid rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    
+}
+.postDate{
+    min-width: 10vw;
+    width: fit-content;
+    padding: 1vw 0.5vw;
+    border-left: 0.2vw solid rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.postAction{
+    min-width: 26vw;
+    width: fit-content;
+    padding: 1vw 0.5vw;
+    border-left: 0.2vw solid rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.recentpostheading1{
+    width: 100%;
+    height: 7vw;
+    background: white;
+    
+    margin-top: 2vw;
+    font-size: 1.3vw;
+    color: #000000a4;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.recentpostheading1:hover{
+    background-color: rgb(255,254,179);
+}
+.postNum1{
+    width: fit-content;
+    padding: 1vw 1.5vw;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.postName1{
+    min-width: 45vw;
+    max-width: 45vw;
+    width: fit-content;
+    max-height: 6vw;
+    padding: 1vw 1.5vw;
+    border-left: 0.2vw solid rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+    
+}
+.postDate1{
+    min-width: 10vw;
+    width: fit-content;
+    padding: 1vw 0.5vw;
+    border-left: 0.2vw solid rgba(0,0,0,0.1);
+    display: flex;
+    font-size: 1.1vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.postAction1{
+    min-width: 26vw;
+    width: fit-content;
+    padding: 1vw 0.5vw;
+    border-left: 0.2vw solid rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.endstylepost{
+    width: 100%;
+    height: 1vw;
+    border-radius: 0 0 2vw 2vw;
+    background-color: white;
+}
