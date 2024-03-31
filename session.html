@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,7 @@
 <body>
     <header style="border: none; ">
         <div class="logo" style="left: -6vw; position: relative;">
-            
+
             <div class="logotxt">PubliZO</div>
             <div class="yellowlogo"></div>
         </div>
@@ -18,26 +19,24 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.hmtl">About</a></li>
                 <li><a href="terms.html">Terms of use</a></li>
-            </ul>
-        </div>
+                </ul>
+            </div>
     </header>
-    
     <div class="headerline"></div>
     <div class="dashboardbd">
         <div class="dashboardmenu">
-            <div class="dbmenuitem">Dashboard</div>
-            <div class="dbmenuitem">Contents</div>
+            <div class="dbmenuitem selected" id="dashboardSession" onclick="menuSwitchDashboard()">Dashboard</div>
+            <div class="dbmenuitem" id="newPostSession" onclick="menuSwitchNewPost()">New Post</div>
+            <div class="dbmenuitem" id="contentsSession" onclick="menuSwitchContents()">Contents</div>
         </div>
         <div class="dashboardcontent">
-            <iframe  class="dbContentWindow" src="dashboard.html" frameborder="none"></iframe>
+            <iframe class="dbContentWindow" id="iframeDashboard" onclick="iframe1()" src="dashboard.html"
+                frameborder="none"></iframe>
+            <iframe class="dbContentWindow" id="iframePublish" onclick="iframe2()" src="publish.html"
+                frameborder="none"></iframe>
         </div>
     </div>
     <div class="logoutbt btbt">Log Out</div>
-    
-        
-    
-    
-
-    
+    <script src="pubScript.js"></script>
 </body>
 </html>
