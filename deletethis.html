@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="delete.css" >
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="homevis()">Register</button>
+    <button onclick="h2vis()" >Login</button>
+    <div class="bodyy">
+        
+    <iframe class="home" id="1" src="register.html" frameborder="0"></iframe>
+    <iframe class="h2" id="2" src="login.html" frameborder="0"></iframe>
+    
+</div>
+<script>
+    
+   
+
+   function homevis(){
+    const home = document.getElementById("1");
+   const hh   = document.getElementById("2");
+    home.style.visibility = 'visible';
+    hh.style.visibility = 'hidden';
+
+   }
+   function h2vis(){
+    const hh = document.getElementById("2");
+    const home = document.getElementById("1");
+    hh.style.visibility = 'visible';
+    home.style.visibility = 'hidden';
+   }
+   
+
+ </script>
+</body>
+</html>

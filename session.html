@@ -1,3 +1,9 @@
+<?php 
+include 'session.php';
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +13,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Register : PubliZO</title>
 </head>
+
 <body>
     <header style="border: none; ">
         <div class="logo" style="left: -6vw; position: relative;">
@@ -22,6 +29,7 @@
                 </ul>
             </div>
     </header>
+
     <div class="headerline"></div>
     <div class="dashboardbd">
         <div class="dashboardmenu">
@@ -30,13 +38,64 @@
             <div class="dbmenuitem" id="contentsSession" onclick="menuSwitchContents()">Contents</div>
         </div>
         <div class="dashboardcontent">
-            <iframe class="dbContentWindow" id="iframeDashboard" onclick="iframe1()" src="dashboard.html"
-                frameborder="none"></iframe>
-            <iframe class="dbContentWindow" id="iframePublish" onclick="iframe2()" src="publish.html"
-                frameborder="none"></iframe>
+            <iframe class="dbContentWindow" id="iframeDashboard"  src="dataset.php"
+                frameborder="none" ></iframe>
+            <iframe class="dbContentWindow" id="iframePublish" src="publish.php"
+                frameborder="none" style="display: none;"></iframe>
+            <iframe class="dbContentWindow ifrAz"  id="iframeArticle" src="artr.php" frameborder="none" style="display: none;"></iframe>
         </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const dashboard = document.getElementById("dashboardSession");
+                const newPost = document.getElementById("newPostSession");
+                const contents = document.getElementById("contentsSession");
+                const iframeDashboard = document.getElementById("iframeDashboard");
+                const iframePublish = document.getElementById("iframePublish");
+                const ifrArticle = document.getElementById("iframeArticle");
+    
+                function resetBackgroundColors() {
+                    dashboard.style.backgroundColor = "#fff";
+                    newPost.style.backgroundColor = "#fff";
+                    contents.style.backgroundColor = "#fff";
+                }
+    
+                function hideAllIframes() {
+                    iframeDashboard.style.display = "none";
+                    iframePublish.style.display = "none";
+                    ifrArticle.style.display = "none";
+                }
+    
+                window.menuSwitchDashboard = function() {
+                    resetBackgroundColors();
+                    dashboard.style.backgroundColor = "#faff00";
+                    hideAllIframes();
+                    iframeDashboard.style.display = "block";
+                };
+    
+                window.menuSwitchNewPost = function() {
+                    resetBackgroundColors();
+                    newPost.style.backgroundColor = "#faff00";
+                    hideAllIframes();
+                    iframePublish.style.display = "block";
+                };
+    
+                window.menuSwitchContents = function() {
+                    resetBackgroundColors();
+                    contents.style.backgroundColor = "#faff00";
+                    hideAllIframes();
+                    ifrArticle.style.display = "block";
+                };
+            });
+        </script>
     </div>
-    <div class="logoutbt btbt">Log Out</div>
+    <a class="logoutbt btbt" href="logout.php">Log Out</a>
     <script src="pubScript.js"></script>
+
+
+
+
+
+
 </body>
+
 </html>

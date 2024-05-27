@@ -23,12 +23,12 @@
     </header>
     
         
-    <form class="registersnip" action="">
+    <form class="registersnip" action="register.php" method="post">
         <div class="reghead">Register</div>
         <div class="inptflds">
-            <input class="inpt" type="text" placeholder="Name" id="name" name="name">
-            <input class="inpt" type="text" name="username" id="username" placeholder="Username">
-            <input class="inpt" type="password" name="password" id="password" placeholder="Password">
+            <input class="inpt" type="text" placeholder="name" id="name" name="name" required>
+            <input class="inpt" type="email" name="email" id="username" placeholder="Username" required>
+            <input class="inpt" type="password" name="password" id="password" placeholder="Password" required>
         </div>
             <div class="accinfo">Already have an account ? <a href="login.html">Login</a></div>
             <button class="regbt">Register</button>

@@ -234,7 +234,7 @@ li:hover {
 .vidcontent video {
   width: 100%;
   aspect-ratio: 5/7;
-  background-color: rgb(32, 32, 32);
+  
   color: white;
 }
 .circlebox {
@@ -486,6 +486,10 @@ a {
 #iframePublish {
   display: none;
 }
+#iframeArticle{
+  display: none;
+}
+
 
 /*iframe Content window - Dashboard*/
 .dhashboardArea {
@@ -720,6 +724,8 @@ a {
   aspect-ratio: 1/1;
   border-radius: 50%;
   background: slategrey;
+  overflow: hidden;
+ 
 }
 .userDataLoad {
   width: 31vw;
@@ -1032,4 +1038,9 @@ input[type="color"]::-webkit-color-swatch {
 }
 #bold {
   font-weight: bold;
+}
+.artSnips{
+  width: 80vw;
+  height: 30vw;
+  color: black;
 }

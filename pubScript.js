@@ -1,35 +1,11 @@
 /* Menu Switch Script */
 
-const dashboard = document.getElementById("dashboardSession");
-const newPost = document.getElementById("newPostSession");
-const contents = document.getElementById("contentsSession");
-const iframeDashboard = document.getElementById("iframeDashboard");
-const iframePublish = document.getElementById("iframePublish");
+// Ensure this script is in a file called "menu.js" or inline within a <script> tag after the HTML elements
 
-function menuSwitchDashboard() {
-  dashboard.style.backgroundColor = "#faff00";
-  newPost.style.backgroundColor = "#fff";
-  contents.style.backgroundColor = "#fff";
-  iframeDashboard.style.display = "";
-  iframePublish.style.display = "none";
-  /*Add more iframes here to add in menu*/
-}
+// Ensure this script is in a file called "menu.js" or inline within a <script> tag after the HTML elements
 
-function menuSwitchNewPost() {
-  dashboard.style.backgroundColor = "#fff";
-  newPost.style.backgroundColor = "#faff00";
-  contents.style.backgroundColor = "#fff";
-  iframeDashboard.style.display = "none";
-  iframePublish.style.display = "block";
-  /*Add more iframes here to add in menu*/
-}
 
-function menuSwitchContents() {
-  dashboard.style.backgroundColor = "#fff";
-  newPost.style.backgroundColor = "#fff";
-  contents.style.backgroundColor = "#faff00";
-  /*Add more iframes here to add in menu*/
-}
+
 /*finish*/
 
 /* Publish Page Styles functionality */
