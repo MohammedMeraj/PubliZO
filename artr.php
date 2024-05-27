@@ -35,6 +35,7 @@ function fetchArticles($conn, $tableName) {
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
+            $row['table'] = $tableName; // Add the table name to the article data for link generation
             $articles[] = $row;
         }
     }
@@ -68,10 +69,14 @@ foreach ($userTables as $table) {
 
     foreach ($articles as &$article) {
         $article['author'] = $authorName; // Add the author to the article data
-        $article['table'] = $table; // Add the table name to the article data for link generation
+        $allArticles[] = $article;
     }
-    $allArticles = array_merge($allArticles, $articles);
 }
+
+// Sort articles by date in descending order (most recent first)
+usort($allArticles, function($a, $b) {
+    return strtotime($b['date']) - strtotime($a['date']);
+});
 
 $conn->close();
 ?>
